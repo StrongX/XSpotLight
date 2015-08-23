@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AB157C61B89FFDF008CE626 /* EMHint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB157C11B89FFDF008CE626 /* EMHint.m */; };
+		2AB157C71B89FFDF008CE626 /* EMHintsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB157C31B89FFDF008CE626 /* EMHintsView.m */; };
+		2AB157CF1B8A05D3008CE626 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AB157CE1B8A05D3008CE626 /* back.jpg */; };
+		2AB157D51B8A14A7008CE626 /* XSportLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB157D41B8A14A7008CE626 /* XSportLight.m */; };
+		2AD324971B88A67600C67ED9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD324961B88A67600C67ED9 /* main.m */; };
+		2AD3249A1B88A67600C67ED9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD324991B88A67600C67ED9 /* AppDelegate.m */; };
+		2AD3249D1B88A67600C67ED9 /* XSportLight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3249B1B88A67600C67ED9 /* XSportLight.xcdatamodeld */; };
+		2AD324A01B88A67600C67ED9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3249F1B88A67600C67ED9 /* ViewController.m */; };
+		2AD324A31B88A67600C67ED9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD324A11B88A67600C67ED9 /* Main.storyboard */; };
+		2AD324A51B88A67600C67ED9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD324A41B88A67600C67ED9 /* Images.xcassets */; };
+		2AD324A81B88A67600C67ED9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AD324A61B88A67600C67ED9 /* LaunchScreen.xib */; };
+		2AD324B41B88A67600C67ED9 /* XSportLightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD324B31B88A67600C67ED9 /* XSportLightTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AD324AE1B88A67600C67ED9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AD324891B88A67600C67ED9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AD324901B88A67600C67ED9;
+			remoteInfo = XSportLight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AB157C01B89FFDF008CE626 /* EMHint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMHint.h; sourceTree = "<group>"; };
+		2AB157C11B89FFDF008CE626 /* EMHint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMHint.m; sourceTree = "<group>"; };
+		2AB157C21B89FFDF008CE626 /* EMHintsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMHintsView.h; sourceTree = "<group>"; };
+		2AB157C31B89FFDF008CE626 /* EMHintsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMHintsView.m; sourceTree = "<group>"; };
+		2AB157CE1B8A05D3008CE626 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
+		2AB157D31B8A14A7008CE626 /* XSportLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSportLight.h; sourceTree = "<group>"; };
+		2AB157D41B8A14A7008CE626 /* XSportLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSportLight.m; sourceTree = "<group>"; };
+		2AD324911B88A67600C67ED9 /* XSportLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSportLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AD324951B88A67600C67ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AD324961B88A67600C67ED9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2AD324981B88A67600C67ED9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2AD324991B88A67600C67ED9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2AD3249C1B88A67600C67ED9 /* XSportLight.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XSportLight.xcdatamodel; sourceTree = "<group>"; };
+		2AD3249E1B88A67600C67ED9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2AD3249F1B88A67600C67ED9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2AD324A21B88A67600C67ED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2AD324A41B88A67600C67ED9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2AD324A71B88A67600C67ED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2AD324AD1B88A67600C67ED9 /* XSportLightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XSportLightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AD324B21B88A67600C67ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AD324B31B88A67600C67ED9 /* XSportLightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSportLightTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AD3248E1B88A67600C67ED9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AD324AA1B88A67600C67ED9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AD324881B88A67600C67ED9 = {
+			isa = PBXGroup;
+			children = (
+				2AD324931B88A67600C67ED9 /* XSportLight */,
+				2AD324B01B88A67600C67ED9 /* XSportLightTests */,
+				2AD324921B88A67600C67ED9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AD324921B88A67600C67ED9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AD324911B88A67600C67ED9 /* XSportLight.app */,
+				2AD324AD1B88A67600C67ED9 /* XSportLightTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AD324931B88A67600C67ED9 /* XSportLight */ = {
+			isa = PBXGroup;
+			children = (
+				2AD324981B88A67600C67ED9 /* AppDelegate.h */,
+				2AD324991B88A67600C67ED9 /* AppDelegate.m */,
+				2AD3249E1B88A67600C67ED9 /* ViewController.h */,
+				2AD3249F1B88A67600C67ED9 /* ViewController.m */,
+				2AB157C01B89FFDF008CE626 /* EMHint.h */,
+				2AB157C11B89FFDF008CE626 /* EMHint.m */,
+				2AB157C21B89FFDF008CE626 /* EMHintsView.h */,
+				2AB157C31B89FFDF008CE626 /* EMHintsView.m */,
+				2AB157D31B8A14A7008CE626 /* XSportLight.h */,
+				2AB157D41B8A14A7008CE626 /* XSportLight.m */,
+				2AB157CE1B8A05D3008CE626 /* back.jpg */,
+				2AD324A11B88A67600C67ED9 /* Main.storyboard */,
+				2AD324A41B88A67600C67ED9 /* Images.xcassets */,
+				2AD324A61B88A67600C67ED9 /* LaunchScreen.xib */,
+				2AD3249B1B88A67600C67ED9 /* XSportLight.xcdatamodeld */,
+				2AD324941B88A67600C67ED9 /* Supporting Files */,
+			);
+			path = XSportLight;
+			sourceTree = "<group>";
+		};
+		2AD324941B88A67600C67ED9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AD324951B88A67600C67ED9 /* Info.plist */,
+				2AD324961B88A67600C67ED9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2AD324B01B88A67600C67ED9 /* XSportLightTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AD324B31B88A67600C67ED9 /* XSportLightTests.m */,
+				2AD324B11B88A67600C67ED9 /* Supporting Files */,
+			);
+			path = XSportLightTests;
+			sourceTree = "<group>";
+		};
+		2AD324B11B88A67600C67ED9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AD324B21B88A67600C67ED9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AD324901B88A67600C67ED9 /* XSportLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AD324B71B88A67600C67ED9 /* Build configuration list for PBXNativeTarget "XSportLight" */;
+			buildPhases = (
+				2AD3248D1B88A67600C67ED9 /* Sources */,
+				2AD3248E1B88A67600C67ED9 /* Frameworks */,
+				2AD3248F1B88A67600C67ED9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XSportLight;
+			productName = XSportLight;
+			productReference = 2AD324911B88A67600C67ED9 /* XSportLight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2AD324AC1B88A67600C67ED9 /* XSportLightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AD324BA1B88A67600C67ED9 /* Build configuration list for PBXNativeTarget "XSportLightTests" */;
+			buildPhases = (
+				2AD324A91B88A67600C67ED9 /* Sources */,
+				2AD324AA1B88A67600C67ED9 /* Frameworks */,
+				2AD324AB1B88A67600C67ED9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AD324AF1B88A67600C67ED9 /* PBXTargetDependency */,
+			);
+			name = XSportLightTests;
+			productName = XSportLightTests;
+			productReference = 2AD324AD1B88A67600C67ED9 /* XSportLightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AD324891B88A67600C67ED9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = xlx;
+				TargetAttributes = {
+					2AD324901B88A67600C67ED9 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2AD324AC1B88A67600C67ED9 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 2AD324901B88A67600C67ED9;
+					};
+				};
+			};
+			buildConfigurationList = 2AD3248C1B88A67600C67ED9 /* Build configuration list for PBXProject "XSportLight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2AD324881B88A67600C67ED9;
+			productRefGroup = 2AD324921B88A67600C67ED9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AD324901B88A67600C67ED9 /* XSportLight */,
+				2AD324AC1B88A67600C67ED9 /* XSportLightTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AD3248F1B88A67600C67ED9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB157CF1B8A05D3008CE626 /* back.jpg in Resources */,
+				2AD324A31B88A67600C67ED9 /* Main.storyboard in Resources */,
+				2AD324A81B88A67600C67ED9 /* LaunchScreen.xib in Resources */,
+				2AD324A51B88A67600C67ED9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AD324AB1B88A67600C67ED9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AD3248D1B88A67600C67ED9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB157D51B8A14A7008CE626 /* XSportLight.m in Sources */,
+				2AD3249A1B88A67600C67ED9 /* AppDelegate.m in Sources */,
+				2AD324971B88A67600C67ED9 /* main.m in Sources */,
+				2AD324A01B88A67600C67ED9 /* ViewController.m in Sources */,
+				2AB157C71B89FFDF008CE626 /* EMHintsView.m in Sources */,
+				2AD3249D1B88A67600C67ED9 /* XSportLight.xcdatamodeld in Sources */,
+				2AB157C61B89FFDF008CE626 /* EMHint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AD324A91B88A67600C67ED9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AD324B41B88A67600C67ED9 /* XSportLightTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AD324AF1B88A67600C67ED9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AD324901B88A67600C67ED9 /* XSportLight */;
+			targetProxy = 2AD324AE1B88A67600C67ED9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2AD324A11B88A67600C67ED9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AD324A21B88A67600C67ED9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2AD324A61B88A67600C67ED9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AD324A71B88A67600C67ED9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2AD324B51B88A67600C67ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2AD324B61B88A67600C67ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AD324B81B88A67600C67ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XSportLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2AD324B91B88A67600C67ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XSportLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2AD324BB1B88A67600C67ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XSportLightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XSportLight.app/XSportLight";
+			};
+			name = Debug;
+		};
+		2AD324BC1B88A67600C67ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XSportLightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XSportLight.app/XSportLight";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AD3248C1B88A67600C67ED9 /* Build configuration list for PBXProject "XSportLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AD324B51B88A67600C67ED9 /* Debug */,
+				2AD324B61B88A67600C67ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AD324B71B88A67600C67ED9 /* Build configuration list for PBXNativeTarget "XSportLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AD324B81B88A67600C67ED9 /* Debug */,
+				2AD324B91B88A67600C67ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AD324BA1B88A67600C67ED9 /* Build configuration list for PBXNativeTarget "XSportLightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AD324BB1B88A67600C67ED9 /* Debug */,
+				2AD324BC1B88A67600C67ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2AD3249B1B88A67600C67ED9 /* XSportLight.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2AD3249C1B88A67600C67ED9 /* XSportLight.xcdatamodel */,
+			);
+			currentVersion = 2AD3249C1B88A67600C67ED9 /* XSportLight.xcdatamodel */;
+			path = XSportLight.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2AD324891B88A67600C67ED9 /* Project object */;
+}
