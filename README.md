@@ -2,7 +2,7 @@
 
 ![image](https://github.com/StrongX/XSportLight/blob/master/10.gif)
 
- 
+```
     XSportLight *SportLight = [[XSportLight alloc]init];
     SportLight.messageArray = @[
                                 @"这是《简书》",
@@ -19,3 +19,4 @@
     [self presentViewController:SportLight animated:false completion:^{
         
     }];
+```
