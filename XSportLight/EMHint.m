@@ -4,43 +4,7 @@
 @implementation EMHint
 @synthesize hintDelegate;
 
-#pragma mark ---------------------------------->> 
-#pragma mark -------------->>private
-//-(void)_onTap:(UITapGestureRecognizer*)tap
-//{
-//    BOOL flag = YES;
-//    if ([self.hintDelegate respondsToSelector:@selector(hintStateShouldCloseIfPermitted:)]) {
-//        flag = [self.hintDelegate hintStateShouldCloseIfPermitted:self];
-//    }
-//    if(!flag)return;
-//    if ([self.hintDelegate respondsToSelector:@selector(hintStateWillClose:)]) {
-//        [self.hintDelegate hintStateWillClose:self];
-//    }
-//    
-//    [UIView animateWithDuration:0.6 delay:0.0 options:UIViewAnimationOptionCurveEaseOut 
-//                     animations:^(){
-//                         [_modalView setAlpha:0.0];
-//                     } 
-//                     completion:^(BOOL finished){
-//                         [_modalView removeFromSuperview];
-//                         _modalView = nil;
-//                         if ([self.hintDelegate respondsToSelector:@selector(hintStateDidClose:)])
-//                         {
-//                             [self.hintDelegate hintStateDidClose:self];
-//                         }
-//
-//                     }];
-//    
-//}
-//
-//-(void)_addTap
-//{
-//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_onTap:)];
-//    [_modalView addGestureRecognizer:tap]; 
-// }
 
-#pragma mark ---------------------------------->> 
-#pragma mark -------------->>PUBLIC
 -(void)clear
 {
     [_modalView removeFromSuperview];
@@ -75,11 +39,7 @@
 //    [presentationPlace addSubview:_modalView];
     
     UIView *v = nil;
-//    if ([[self hintDelegate] respondsToSelector:@selector(hintStateViewForDialog:)]) {
-//        v = [self.hintDelegate hintStateViewForDialog:self];
-//        [_modalView addSubview:v];
-//    }
-    
+
     if(v==nil)//no custom subview
     {
         //label
@@ -107,15 +67,7 @@
         [_modalView addSubview:label];
      }
     
-//    if ([[self hintDelegate] respondsToSelector:@selector(hintStateHasDefaultTapGestureRecognizer:)]) {
-//        BOOL flag = [self.hintDelegate hintStateHasDefaultTapGestureRecognizer:self];
-//        if (flag) {
-//            [self _addTap];
-//        }
-//    }else
-//    {
-//        [self _addTap];
-//    }
+
     
     return _modalView;
 }

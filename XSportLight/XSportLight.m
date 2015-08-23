@@ -36,22 +36,6 @@
 
 #pragma mark ---------------------------------->>
 #pragma mark -------------->>HInt Delegate
--(BOOL)hintStateShouldCloseIfPermitted:(id)hintState
-{
-    
-//        _curType ++;
-//    
-//        if(_curType >= _index)
-//        {
-//            _curType = 0;
-//            
-//            return YES;
-//        }
-//        [self doNext];
-//        return NO;
-    
-    return YES;
-}
 
 
 

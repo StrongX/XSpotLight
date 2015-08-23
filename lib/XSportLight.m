@@ -12,6 +12,7 @@
 
 
 @property (nonatomic,  ) int index;
+@property (nonatomic, strong) UIView *showView;
 
 @end
 @implementation XSportLight
@@ -35,22 +36,6 @@
 
 #pragma mark ---------------------------------->>
 #pragma mark -------------->>HInt Delegate
--(BOOL)hintStateShouldCloseIfPermitted:(id)hintState
-{
-    
-//        _curType ++;
-//    
-//        if(_curType >= _index)
-//        {
-//            _curType = 0;
-//            
-//            return YES;
-//        }
-//        [self doNext];
-//        return NO;
-    
-    return YES;
-}
 
 
 
@@ -77,13 +62,23 @@
 -(void)show{
     modalState = [[EMHint alloc] init];
     [modalState setHintDelegate:self];
-    UIView *showView = [modalState presentModalMessage:_messageArray[_index] where:self.view];
-    [self.view addSubview:showView];
+    _showView = [modalState presentModalMessage:_messageArray[_index] where:self.view];
+    [self.view addSubview:_showView];
     
-    
-   
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tap)];
+    [_showView addGestureRecognizer:tap];
 }
-
+- (void)tap{
+    _index++;
+    if (_index >= _messageArray.count) {
+        [self dismissViewControllerAnimated:false completion:^{
+            
+        }];
+    }else{
+        [_showView removeFromSuperview];
+        [self show];
+    }
+}
 
 
 
