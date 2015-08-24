@@ -73,6 +73,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A885AF31B8AE342000C432B /* XSportLight */ = {
+			isa = PBXGroup;
+			children = (
+				2AB157C01B89FFDF008CE626 /* EMHint.h */,
+				2AB157C11B89FFDF008CE626 /* EMHint.m */,
+				2AB157C21B89FFDF008CE626 /* EMHintsView.h */,
+				2AB157C31B89FFDF008CE626 /* EMHintsView.m */,
+				2AB157D31B8A14A7008CE626 /* XSportLight.h */,
+				2AB157D41B8A14A7008CE626 /* XSportLight.m */,
+			);
+			name = XSportLight;
+			sourceTree = "<group>";
+		};
 		2AD324881B88A67600C67ED9 = {
 			isa = PBXGroup;
 			children = (
@@ -94,16 +107,11 @@
 		2AD324931B88A67600C67ED9 /* XSportLight */ = {
 			isa = PBXGroup;
 			children = (
+				2A885AF31B8AE342000C432B /* XSportLight */,
 				2AD324981B88A67600C67ED9 /* AppDelegate.h */,
 				2AD324991B88A67600C67ED9 /* AppDelegate.m */,
 				2AD3249E1B88A67600C67ED9 /* ViewController.h */,
 				2AD3249F1B88A67600C67ED9 /* ViewController.m */,
-				2AB157C01B89FFDF008CE626 /* EMHint.h */,
-				2AB157C11B89FFDF008CE626 /* EMHint.m */,
-				2AB157C21B89FFDF008CE626 /* EMHintsView.h */,
-				2AB157C31B89FFDF008CE626 /* EMHintsView.m */,
-				2AB157D31B8A14A7008CE626 /* XSportLight.h */,
-				2AB157D41B8A14A7008CE626 /* XSportLight.m */,
 				2AB157CE1B8A05D3008CE626 /* back.jpg */,
 				2AD324A11B88A67600C67ED9 /* Main.storyboard */,
 				2AD324A41B88A67600C67ED9 /* Images.xcassets */,

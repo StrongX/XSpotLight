@@ -11,7 +11,7 @@
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
-@interface ViewController ()
+@interface ViewController ()<XSportLightDelegate>
 
 @end
 
@@ -38,6 +38,8 @@
                              [NSValue valueWithCGRect:CGRectMake(SCREEN_WIDTH - 20, 42, 50, 50)],
                              [NSValue valueWithCGRect:CGRectMake(0,0,0,0)]
                              ];
+    
+    SportLight.delegate = self;
     [self presentViewController:SportLight animated:false completion:^{
         
     }];
@@ -46,6 +48,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)XSportLightClicked:(NSInteger)index{
+    NSLog(@"%ld",(long)index);
+}
 
 @end

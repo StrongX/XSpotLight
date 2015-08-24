@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "EMHint.h"
+@class XSportLight;
+@protocol XSportLightDelegate <NSObject>
+
+@optional
+- (void)XSportLightClicked:(NSInteger)index;
+
+@end
 
 @interface XSportLight : UIViewController<EMHintDelegate>
 {
@@ -16,6 +23,6 @@
 
 @property (nonatomic, strong) NSArray *messageArray;
 @property (nonatomic,       ) NSArray *rectArray;
-
+@property (nonatomic, weak  ) id<XSportLightDelegate> delegate;
 
 @end

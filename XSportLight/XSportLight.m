@@ -70,6 +70,7 @@
 }
 - (void)tap{
     _index++;
+    [_delegate XSportLightClicked:_index];
     if (_index >= _messageArray.count) {
         [self dismissViewControllerAnimated:false completion:^{
             
