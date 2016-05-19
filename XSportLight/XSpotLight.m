@@ -1,21 +1,21 @@
 //
-//  XSportLight.m
-//  XSportLight
+//  XSpotLight.m
+//  XSpotLight
 //
 //  Created by xlx on 15/8/22.
 //  Copyright (c) 2015年 xlx. All rights reserved.
 //
 
-#import "XSportLight.h"
+#import "XSpotLight.h"
 
-@interface XSportLight ()
+@interface XSpotLight ()
 
 
 @property (nonatomic,  ) int index;
 @property (nonatomic, strong) UIView *showView;
 
 @end
-@implementation XSportLight
+@implementation XSpotLight
 -(id)init{
     self = [super init];
     self.modalPresentationStyle = UIModalPresentationOverFullScreen;
@@ -70,7 +70,7 @@
 }
 - (void)tap{
     _index++;
-    [_delegate XSportLightClicked:_index];
+    [_delegate XSpotLightClicked:_index];
     if (_index >= _messageArray.count) {
         [self dismissViewControllerAnimated:false completion:^{
             
@@ -80,12 +80,4 @@
         [self show];
     }
 }
-
-
-
-
-
-
-
-
 @end

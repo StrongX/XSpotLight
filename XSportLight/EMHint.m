@@ -44,7 +44,7 @@
     {
         //label
         UIFont *ft = [UIFont fontWithName:@"Helvetica" size:17.0];
-        CGSize sz = [message sizeWithFont:ft constrainedToSize:CGSizeMake(250, 1000)];
+        CGSize sz =[message boundingRectWithSize:CGSizeMake(250, 1000) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:ft} context:nil].size;
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(floorf(presentationPlace.center.x - sz.width/2),
                                                                    floorf(presentationPlace.center.y - sz.height/2),
                                                                    floorf(sz.width),

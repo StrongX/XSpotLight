@@ -93,7 +93,7 @@
     CGFloat colorLocations[2] = {0.25,0.5};
     
     // draw spotlights
-    int spotlightCount = _positionArray.count;
+    NSInteger spotlightCount = _positionArray.count;
     for (int i=0; i<spotlightCount; ++i)
     {
         // center and radius of spotlight

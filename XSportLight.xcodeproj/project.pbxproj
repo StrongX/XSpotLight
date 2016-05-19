@@ -10,7 +10,7 @@
 		2AB157C61B89FFDF008CE626 /* EMHint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB157C11B89FFDF008CE626 /* EMHint.m */; };
 		2AB157C71B89FFDF008CE626 /* EMHintsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB157C31B89FFDF008CE626 /* EMHintsView.m */; };
 		2AB157CF1B8A05D3008CE626 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AB157CE1B8A05D3008CE626 /* back.jpg */; };
-		2AB157D51B8A14A7008CE626 /* XSportLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB157D41B8A14A7008CE626 /* XSportLight.m */; };
+		2AB157D51B8A14A7008CE626 /* XSpotLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB157D41B8A14A7008CE626 /* XSpotLight.m */; };
 		2AD324971B88A67600C67ED9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD324961B88A67600C67ED9 /* main.m */; };
 		2AD3249A1B88A67600C67ED9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD324991B88A67600C67ED9 /* AppDelegate.m */; };
 		2AD3249D1B88A67600C67ED9 /* XSportLight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3249B1B88A67600C67ED9 /* XSportLight.xcdatamodeld */; };
@@ -37,8 +37,8 @@
 		2AB157C21B89FFDF008CE626 /* EMHintsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMHintsView.h; sourceTree = "<group>"; };
 		2AB157C31B89FFDF008CE626 /* EMHintsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMHintsView.m; sourceTree = "<group>"; };
 		2AB157CE1B8A05D3008CE626 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
-		2AB157D31B8A14A7008CE626 /* XSportLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSportLight.h; sourceTree = "<group>"; };
-		2AB157D41B8A14A7008CE626 /* XSportLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSportLight.m; sourceTree = "<group>"; };
+		2AB157D31B8A14A7008CE626 /* XSpotLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSpotLight.h; sourceTree = "<group>"; };
+		2AB157D41B8A14A7008CE626 /* XSpotLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSpotLight.m; sourceTree = "<group>"; };
 		2AD324911B88A67600C67ED9 /* XSportLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSportLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD324951B88A67600C67ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AD324961B88A67600C67ED9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,23 +73,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A885AF31B8AE342000C432B /* XSportLight */ = {
+		2A885AF31B8AE342000C432B /* XSpotLight */ = {
 			isa = PBXGroup;
 			children = (
 				2AB157C01B89FFDF008CE626 /* EMHint.h */,
 				2AB157C11B89FFDF008CE626 /* EMHint.m */,
 				2AB157C21B89FFDF008CE626 /* EMHintsView.h */,
 				2AB157C31B89FFDF008CE626 /* EMHintsView.m */,
-				2AB157D31B8A14A7008CE626 /* XSportLight.h */,
-				2AB157D41B8A14A7008CE626 /* XSportLight.m */,
+				2AB157D31B8A14A7008CE626 /* XSpotLight.h */,
+				2AB157D41B8A14A7008CE626 /* XSpotLight.m */,
 			);
-			name = XSportLight;
+			name = XSpotLight;
 			sourceTree = "<group>";
 		};
 		2AD324881B88A67600C67ED9 = {
 			isa = PBXGroup;
 			children = (
-				2AD324931B88A67600C67ED9 /* XSportLight */,
+				2AD324931B88A67600C67ED9 /* XSpotLight */,
 				2AD324B01B88A67600C67ED9 /* XSportLightTests */,
 				2AD324921B88A67600C67ED9 /* Products */,
 			);
@@ -104,10 +104,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2AD324931B88A67600C67ED9 /* XSportLight */ = {
+		2AD324931B88A67600C67ED9 /* XSpotLight */ = {
 			isa = PBXGroup;
 			children = (
-				2A885AF31B8AE342000C432B /* XSportLight */,
+				2A885AF31B8AE342000C432B /* XSpotLight */,
 				2AD324981B88A67600C67ED9 /* AppDelegate.h */,
 				2AD324991B88A67600C67ED9 /* AppDelegate.m */,
 				2AD3249E1B88A67600C67ED9 /* ViewController.h */,
@@ -119,6 +119,7 @@
 				2AD3249B1B88A67600C67ED9 /* XSportLight.xcdatamodeld */,
 				2AD324941B88A67600C67ED9 /* Supporting Files */,
 			);
+			name = XSpotLight;
 			path = XSportLight;
 			sourceTree = "<group>";
 		};
@@ -192,7 +193,7 @@
 		2AD324891B88A67600C67ED9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = xlx;
 				TargetAttributes = {
 					2AD324901B88A67600C67ED9 = {
@@ -249,7 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AB157D51B8A14A7008CE626 /* XSportLight.m in Sources */,
+				2AB157D51B8A14A7008CE626 /* XSpotLight.m in Sources */,
 				2AD3249A1B88A67600C67ED9 /* AppDelegate.m in Sources */,
 				2AD324971B88A67600C67ED9 /* main.m in Sources */,
 				2AD324A01B88A67600C67ED9 /* ViewController.m in Sources */,
@@ -318,6 +319,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -385,6 +387,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XSportLight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xlx.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -395,6 +398,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XSportLight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xlx.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -413,6 +417,7 @@
 				);
 				INFOPLIST_FILE = XSportLightTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xlx.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XSportLight.app/XSportLight";
 			};
@@ -428,6 +433,7 @@
 				);
 				INFOPLIST_FILE = XSportLightTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xlx.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XSportLight.app/XSportLight";
 			};
