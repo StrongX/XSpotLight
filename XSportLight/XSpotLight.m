@@ -37,8 +37,6 @@
 #pragma mark ---------------------------------->>
 #pragma mark -------------->>HInt Delegate
 
-
-
 -(NSArray*)hintStateRectsToHint:(id)hintState
 {
     NSArray* rectArray = nil;
@@ -60,7 +58,7 @@
 
 
 -(void)show{
-    modalState = [[EMHint alloc] init];
+    modalState = [[XManager alloc] init];
     [modalState setHintDelegate:self];
     _showView = [modalState presentModalMessage:_messageArray[_index] where:self.view];
     [self.view addSubview:_showView];

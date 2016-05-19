@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2AB157C61B89FFDF008CE626 /* EMHint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB157C11B89FFDF008CE626 /* EMHint.m */; };
-		2AB157C71B89FFDF008CE626 /* EMHintsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB157C31B89FFDF008CE626 /* EMHintsView.m */; };
+		2AB157C61B89FFDF008CE626 /* XManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB157C11B89FFDF008CE626 /* XManager.m */; };
+		2AB157C71B89FFDF008CE626 /* XSpotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB157C31B89FFDF008CE626 /* XSpotView.m */; };
 		2AB157CF1B8A05D3008CE626 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2AB157CE1B8A05D3008CE626 /* back.jpg */; };
 		2AB157D51B8A14A7008CE626 /* XSpotLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB157D41B8A14A7008CE626 /* XSpotLight.m */; };
 		2AD324971B88A67600C67ED9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD324961B88A67600C67ED9 /* main.m */; };
@@ -32,10 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2AB157C01B89FFDF008CE626 /* EMHint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMHint.h; sourceTree = "<group>"; };
-		2AB157C11B89FFDF008CE626 /* EMHint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMHint.m; sourceTree = "<group>"; };
-		2AB157C21B89FFDF008CE626 /* EMHintsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMHintsView.h; sourceTree = "<group>"; };
-		2AB157C31B89FFDF008CE626 /* EMHintsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMHintsView.m; sourceTree = "<group>"; };
+		2AB157C01B89FFDF008CE626 /* XManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XManager.h; sourceTree = "<group>"; };
+		2AB157C11B89FFDF008CE626 /* XManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XManager.m; sourceTree = "<group>"; };
+		2AB157C21B89FFDF008CE626 /* XSpotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSpotView.h; sourceTree = "<group>"; };
+		2AB157C31B89FFDF008CE626 /* XSpotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSpotView.m; sourceTree = "<group>"; };
 		2AB157CE1B8A05D3008CE626 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
 		2AB157D31B8A14A7008CE626 /* XSpotLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSpotLight.h; sourceTree = "<group>"; };
 		2AB157D41B8A14A7008CE626 /* XSpotLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSpotLight.m; sourceTree = "<group>"; };
@@ -76,10 +76,10 @@
 		2A885AF31B8AE342000C432B /* XSpotLight */ = {
 			isa = PBXGroup;
 			children = (
-				2AB157C01B89FFDF008CE626 /* EMHint.h */,
-				2AB157C11B89FFDF008CE626 /* EMHint.m */,
-				2AB157C21B89FFDF008CE626 /* EMHintsView.h */,
-				2AB157C31B89FFDF008CE626 /* EMHintsView.m */,
+				2AB157C01B89FFDF008CE626 /* XManager.h */,
+				2AB157C11B89FFDF008CE626 /* XManager.m */,
+				2AB157C21B89FFDF008CE626 /* XSpotView.h */,
+				2AB157C31B89FFDF008CE626 /* XSpotView.m */,
 				2AB157D31B8A14A7008CE626 /* XSpotLight.h */,
 				2AB157D41B8A14A7008CE626 /* XSpotLight.m */,
 			);
@@ -254,9 +254,9 @@
 				2AD3249A1B88A67600C67ED9 /* AppDelegate.m in Sources */,
 				2AD324971B88A67600C67ED9 /* main.m in Sources */,
 				2AD324A01B88A67600C67ED9 /* ViewController.m in Sources */,
-				2AB157C71B89FFDF008CE626 /* EMHintsView.m in Sources */,
+				2AB157C71B89FFDF008CE626 /* XSpotView.m in Sources */,
 				2AD3249D1B88A67600C67ED9 /* XSportLight.xcdatamodeld in Sources */,
-				2AB157C61B89FFDF008CE626 /* EMHint.m in Sources */,
+				2AB157C61B89FFDF008CE626 /* XManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

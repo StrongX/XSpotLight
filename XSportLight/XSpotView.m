@@ -1,11 +1,11 @@
 
 
-#import "EMHintsView.h"
+#import "XSpotView.h"
 #import <QuartzCore/QuartzCore.h>
 
 #define BACKGROUND_ALPHA 0.70
 
-@implementation EMHintsView
+@implementation XSpotView
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -105,10 +105,10 @@
         //
         //draw a rect around view
         
-        CGPathAddRect(path, NULL, CGRectMake(c.x - radius, c.y -radius,100,100));
-        CGPathAddLineToPoint(path, NULL, c.x + radius, c.y - radius);
-        CGPathAddLineToPoint(path, NULL, c.x + radius, c.y + radius);
-        CGPathAddLineToPoint(path, NULL, c.x - radius, c.y + radius);
+        CGPathAddRect(path, NULL, CGRectMake(c.x - radius, c.y -radius,100,300));
+        CGPathAddLineToPoint(path, NULL, c.x + radius, c.y - radius*2);
+        CGPathAddLineToPoint(path, NULL, c.x + radius, c.y + radius*2);
+        CGPathAddLineToPoint(path, NULL, c.x - radius, c.y + radius*2);
         CGPathAddLineToPoint(path, NULL, c.x - radius, c.y);
         CGPathAddLineToPoint(path, NULL, c.x, c.y);
         /*

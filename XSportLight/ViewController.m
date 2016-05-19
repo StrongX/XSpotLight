@@ -34,8 +34,8 @@
                                 ];
     SpotLight.rectArray = @[
                              [NSValue valueWithCGRect:CGRectMake(0,0,0,0)],
-                             [NSValue valueWithCGRect:CGRectMake(SCREEN_WIDTH/2, SCREEN_HEIGHT - 20, 50, 50)],
-                             [NSValue valueWithCGRect:CGRectMake(SCREEN_WIDTH - 20, 42, 50, 50)],
+                             [NSValue valueWithCGRect:CGRectMake(SCREEN_WIDTH/2, SCREEN_HEIGHT - 20, 50, 500)],
+                             [NSValue valueWithCGRect:CGRectMake(SCREEN_WIDTH - 20, 42, 50, 500)],
                              [NSValue valueWithCGRect:CGRectMake(0,0,0,0)]
                              ];
     

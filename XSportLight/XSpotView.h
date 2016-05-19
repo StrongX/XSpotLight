@@ -1,7 +1,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EMHintsView : UIView
+@interface XSpotView : UIView
 {
     // array positions of spotlights
     NSMutableArray* _positionArray;

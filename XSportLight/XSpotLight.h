@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "EMHint.h"
+#import "XManager.h"
 @class XSpotLight;
 @protocol XSpotLightDelegate <NSObject>
 
@@ -16,9 +16,9 @@
 
 @end
 
-@interface XSpotLight : UIViewController<EMHintDelegate>
+@interface XSpotLight : UIViewController<XSpotDelegate>
 {
-    EMHint *modalState;
+    XManager *modalState;
 }
 
 @property (nonatomic, strong) NSArray *messageArray;

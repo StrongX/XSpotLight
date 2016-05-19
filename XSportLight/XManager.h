@@ -1,14 +1,14 @@
 
 #import <Foundation/Foundation.h>
-#import "EMHintsView.h"
+#import "XSpotView.h"
 
 typedef enum
 {
-    EMHintShapeTypeRound,
-    EMHintShapeTypeRectangle//TODO
-}EMHintShapeType;
+    XSpotShapeTypeRound,
+    XSpotShapeTypeRectangle//TODO
+}XSpotShapeType;
 
-@protocol EMHintDelegate <NSObject>
+@protocol XSpotDelegate <NSObject>
 
 @optional
 
@@ -49,24 +49,13 @@ typedef enum
  */
 -(void) hintStateDidClose:(id)hintState ;
 
-
-
-
-
-/*
- // Default hint is a round spotlight effect,
- // TODO:// rectangle type can be returned to override
- */
-//-(EMHintShapeType)hintStateShapeType:(id)hintState;
-
-
 @end
 
-@interface EMHint : NSObject
+@interface XManager : NSObject
 {
-    EMHintsView *_modalView;//our transparent hint window with lablel and spotlight
+    XSpotView *_modalView;//our transparent hint window with lablel and spotlight
 }
-@property (nonatomic,assign) id<EMHintDelegate> hintDelegate;
+@property (nonatomic,assign) id<XSpotDelegate> hintDelegate;
 
 -(UIView*)modalView; // accessor to the modal view (use spareingly)
 -(void)clear;//instant removal of modal view
