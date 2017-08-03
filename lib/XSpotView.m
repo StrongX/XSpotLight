@@ -1,11 +1,11 @@
 
 
-#import "EMHintsView.h"
+#import "XSpotView.h"
 #import <QuartzCore/QuartzCore.h>
 
 #define BACKGROUND_ALPHA 0.70
 
-@implementation EMHintsView
+@implementation XSpotView
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -93,7 +93,7 @@
     CGFloat colorLocations[2] = {0.25,0.5};
     
     // draw spotlights
-    int spotlightCount = _positionArray.count;
+    NSInteger spotlightCount = _positionArray.count;
     for (int i=0; i<spotlightCount; ++i)
     {
         // center and radius of spotlight
@@ -105,10 +105,10 @@
         //
         //draw a rect around view
         
-        CGPathAddRect(path, NULL, CGRectMake(c.x - radius, c.y -radius,100,100));
-        CGPathAddLineToPoint(path, NULL, c.x + radius, c.y - radius);
-        CGPathAddLineToPoint(path, NULL, c.x + radius, c.y + radius);
-        CGPathAddLineToPoint(path, NULL, c.x - radius, c.y + radius);
+        CGPathAddRect(path, NULL, CGRectMake(c.x - radius, c.y -radius,100,300));
+        CGPathAddLineToPoint(path, NULL, c.x + radius, c.y - radius*2);
+        CGPathAddLineToPoint(path, NULL, c.x + radius, c.y + radius*2);
+        CGPathAddLineToPoint(path, NULL, c.x - radius, c.y + radius*2);
         CGPathAddLineToPoint(path, NULL, c.x - radius, c.y);
         CGPathAddLineToPoint(path, NULL, c.x, c.y);
         /*

@@ -1,7 +1,7 @@
 
-#import "EMHint.h"
+#import "XManager.h"
 
-@implementation EMHint
+@implementation XManager
 @synthesize hintDelegate;
 
 
@@ -23,17 +23,17 @@
     if ([self.hintDelegate respondsToSelector:@selector(hintStateViewsToHint:)]) {
         NSArray *viewArray = [self.hintDelegate hintStateViewsToHint:self];
         if(viewArray!=nil)
-            _modalView = [[EMHintsView alloc] initWithFrame:presentationPlace.frame forViews:viewArray];
+            _modalView = [[XSpotView alloc] initWithFrame:presentationPlace.frame forViews:viewArray];
     }
     
     if ([self.hintDelegate respondsToSelector:@selector(hintStateRectsToHint:)]) {
         NSArray* rectArray = [self.hintDelegate hintStateRectsToHint:self];
         if (rectArray != nil)
-            _modalView = [[EMHintsView alloc] initWithFrame:presentationPlace.frame withRects:rectArray];
+            _modalView = [[XSpotView alloc] initWithFrame:presentationPlace.frame withRects:rectArray];
     }
     
     if (_modalView==nil)
-        _modalView = [[EMHintsView alloc] initWithFrame:presentationPlace.frame];
+        _modalView = [[XSpotView alloc] initWithFrame:presentationPlace.frame];
     
     [_modalView setAutoresizingMask:(UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight)];
 //    [presentationPlace addSubview:_modalView];
@@ -44,7 +44,7 @@
     {
         //label
         UIFont *ft = [UIFont fontWithName:@"Helvetica" size:17.0];
-        CGSize sz = [message sizeWithFont:ft constrainedToSize:CGSizeMake(250, 1000)];
+        CGSize sz =[message boundingRectWithSize:CGSizeMake(250, 1000) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:ft} context:nil].size;
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(floorf(presentationPlace.center.x - sz.width/2),
                                                                    floorf(presentationPlace.center.y - sz.height/2),
                                                                    floorf(sz.width),

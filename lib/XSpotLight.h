@@ -7,22 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "EMHint.h"
-@class XSportLight;
-@protocol XSportLightDelegate <NSObject>
+#import "XManager.h"
+@class XSpotLight;
+@protocol XSpotLightDelegate <NSObject>
 
 @optional
-- (void)XSportLightClicked:(NSInteger)index;
+- (void)XSpotLightClicked:(NSInteger)index;
 
 @end
 
-@interface XSportLight : UIViewController<EMHintDelegate>
+@interface XSpotLight : UIViewController<XSpotDelegate>
 {
-    EMHint *modalState;
+    XManager *modalState;
 }
 
 @property (nonatomic, strong) NSArray *messageArray;
 @property (nonatomic,       ) NSArray *rectArray;
-@property (nonatomic, weak  ) id<XSportLightDelegate> delegate;
+@property (nonatomic, weak  ) id<XSpotLightDelegate> delegate;
 
 @end
