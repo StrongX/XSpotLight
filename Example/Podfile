@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'XSpotLight_Example' do
+  pod 'XSpotLight', :path => '../'
+
+  target 'XSpotLight_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
