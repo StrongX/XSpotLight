@@ -1,0 +1,6 @@
+framework module XSpotLight {
+  umbrella header "XSpotLight-umbrella.h"
+
+  export *
+  module * { export * }
+}

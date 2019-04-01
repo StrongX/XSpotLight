@@ -1,0 +1,6 @@
+framework module Pods_XSpotLight_Example {
+  umbrella header "Pods-XSpotLight_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
