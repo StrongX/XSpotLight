@@ -1,0 +1,16 @@
+PODS:
+  - XSpotLight (0.1.0)
+
+DEPENDENCIES:
+  - XSpotLight (from `../`)
+
+EXTERNAL SOURCES:
+  XSpotLight:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XSpotLight: 0ef047cd4c739fdfdc95579eb26c2a33645d469d
+
+PODFILE CHECKSUM: 229fe2f78ccca34b6183257cedc844f858ff2e62
+
+COCOAPODS: 1.6.0.beta.1

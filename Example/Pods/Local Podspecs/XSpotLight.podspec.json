@@ -1,0 +1,22 @@
+{
+  "name": "XSpotLight",
+  "version": "0.1.0",
+  "summary": "A short description of XSpotLight.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/StrongX/XSpotLight",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "StrongX": "strongxlx@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/StrongX/XSpotLight.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XSpotLight/Classes/**/*"
+}
