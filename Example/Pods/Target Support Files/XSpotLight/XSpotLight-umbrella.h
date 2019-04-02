@@ -10,6 +10,9 @@
 #endif
 #endif
 
+#import "XManager.h"
+#import "XSpotLight.h"
+#import "XSpotView.h"
 
 FOUNDATION_EXPORT double XSpotLightVersionNumber;
 FOUNDATION_EXPORT const unsigned char XSpotLightVersionString[];

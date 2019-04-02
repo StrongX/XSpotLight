@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D8B9DA8E6B23ACF92BE549C22BEE9D8 /* XSpotLight-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BD827098D0E6C1EE618769630E9F3A /* XSpotLight-dummy.m */; };
+		1E82200F260DA55ED0072AB28095260C /* XSpotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E92E83C3D554D756ECCBBCF5FADAB4 /* XSpotView.m */; };
 		20D5A70F898F5ECECE4FD6D759E03C4B /* Pods-XSpotLight_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40D396AD1A37A35E99AF764CD63EF592 /* Pods-XSpotLight_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25DDCD15F7D2EAC6A1D60F3C98AA2565 /* XSpotView.h in Headers */ = {isa = PBXBuildFile; fileRef = B53795B78EF60CC8D873B698EBEB3BDB /* XSpotView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DFD57E63A70C83AEFDC38B7CC63F12A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		461ECC64CB10608520186DA1C19095C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		5DC6EA1656ECD028F869C3E2F2012D52 /* XManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D1F0A1CCAA9A1D9DC95C7255A9286AC3 /* XManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BC762C7040B82F155FB1FF0359DB01F /* Pods-XSpotLight_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C6D785F2F855D3E6EA02FD732F23F5 /* Pods-XSpotLight_Tests-dummy.m */; };
-		73A2A02023891CCC84BEF0C8F1534345 /* XSpotLight-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D35F760BF5140441687075C246092418 /* XSpotLight-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D1675788D9495DF55BFEEBEADAC5A28 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = AD42744FF1F3878A7398489F4250E215 /* ReplaceMe.m */; };
 		81F86C9C52D311953FF4D46138ED9F98 /* Pods-XSpotLight_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 947BED6E83BEE6ABF7ED0A444D768015 /* Pods-XSpotLight_Example-dummy.m */; };
+		9A73503410A907ABE2C2F190ED474CF5 /* XSpotLight.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F49BC8C096C9FEDF97BE7655D6E8DA3 /* XSpotLight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E238119C649BFF78B9A74A3AB4CC9A2 /* XSpotLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEBE92B96ACD035562A1169D16801D7 /* XSpotLight.m */; };
+		CF1D54D3F1052B2257E3F61E1D21F9CC /* XSpotLight-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D033FF6C2D2377AD8C4F0A66874694C /* XSpotLight-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFC05C3BFB5B5267EF3820EF2D44D49B /* Pods-XSpotLight_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AFB767BD2DB900336E98792547CCBB /* Pods-XSpotLight_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5AF786F27D8BC3A46D6F575AB53505B /* XManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC820E20DD20F3857F625B59CD16C09 /* XManager.m */; };
+		ED06E13A7B278C7E4E9268097F6B45AA /* XSpotLight-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A92336F4EBF76EB021CDB9E063341D /* XSpotLight-dummy.m */; };
 		FCED467231EC54D69CB68CA0B633A4A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,35 +42,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0955DAB524DC9A9BE1610DD208143037 /* XSpotLight-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XSpotLight-prefix.pch"; sourceTree = "<group>"; };
 		0F311A28476CE6294DE5070BD684FD40 /* Pods-XSpotLight_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XSpotLight_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		19FD38B8E78E078DDDF0282A3296AC7A /* XSpotLight-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XSpotLight-prefix.pch"; sourceTree = "<group>"; };
-		1F012AA34EB6B93681FE435BE6FB7964 /* XSpotLight-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XSpotLight-Info.plist"; sourceTree = "<group>"; };
+		1F49BC8C096C9FEDF97BE7655D6E8DA3 /* XSpotLight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XSpotLight.h; path = XSpotLight/Classes/XSpotLight.h; sourceTree = "<group>"; };
 		246EE0E61D4EDBA4155F2BA6B9B3C15C /* Pods-XSpotLight_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XSpotLight_Tests.modulemap"; sourceTree = "<group>"; };
 		2C2D527D242D2C6E0F892FD3944752A1 /* Pods_XSpotLight_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XSpotLight_Example.framework; path = "Pods-XSpotLight_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36E92E83C3D554D756ECCBBCF5FADAB4 /* XSpotView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XSpotView.m; path = XSpotLight/Classes/XSpotView.m; sourceTree = "<group>"; };
 		375FAC1C2D2F1C6C7B82AE4FBBE123E1 /* Pods_XSpotLight_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XSpotLight_Tests.framework; path = "Pods-XSpotLight_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ED3421954799E8EA6AACC61EAA7F191 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		40D396AD1A37A35E99AF764CD63EF592 /* Pods-XSpotLight_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XSpotLight_Tests-umbrella.h"; sourceTree = "<group>"; };
-		46E92D4228683E35905FFDE24F46F4A8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		4D47DABF0EBD094728E32C00CE94E9A1 /* XSpotLight.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = XSpotLight.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		55C92AE5ACCEEA672B85D921C8F6294A /* XSpotLight.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XSpotLight.modulemap; sourceTree = "<group>"; };
 		576A759157697E085F5EAAA19DB7037C /* Pods-XSpotLight_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XSpotLight_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		58EF289CDA7A236451F6190E391E1A23 /* Pods-XSpotLight_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XSpotLight_Tests-Info.plist"; sourceTree = "<group>"; };
 		599DE062C991A136F9EA59C0C0638F84 /* Pods-XSpotLight_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XSpotLight_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		60C6D785F2F855D3E6EA02FD732F23F5 /* Pods-XSpotLight_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XSpotLight_Tests-dummy.m"; sourceTree = "<group>"; };
 		62E1CF368E20E7E90AB2D349D6B4D0FF /* Pods-XSpotLight_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XSpotLight_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		685E463603F6997628DCF815AE73C01C /* XSpotLight.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XSpotLight.modulemap; sourceTree = "<group>"; };
-		7E665B093298C9A986EE32E15837AF7C /* XSpotLight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XSpotLight.xcconfig; sourceTree = "<group>"; };
+		630D053CD17A73FFB4251E8F8D949099 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6DEBE92B96ACD035562A1169D16801D7 /* XSpotLight.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XSpotLight.m; path = XSpotLight/Classes/XSpotLight.m; sourceTree = "<group>"; };
 		80AFB767BD2DB900336E98792547CCBB /* Pods-XSpotLight_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XSpotLight_Example-umbrella.h"; sourceTree = "<group>"; };
+		8FC820E20DD20F3857F625B59CD16C09 /* XManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XManager.m; path = XSpotLight/Classes/XManager.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		947BED6E83BEE6ABF7ED0A444D768015 /* Pods-XSpotLight_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XSpotLight_Example-dummy.m"; sourceTree = "<group>"; };
+		95E6B6B4B7BCBEC3F242803D8B003808 /* XSpotLight-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XSpotLight-Info.plist"; sourceTree = "<group>"; };
+		9A057B0B521376E1DC8A76DF6D7FD1E3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9D033FF6C2D2377AD8C4F0A66874694C /* XSpotLight-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XSpotLight-umbrella.h"; sourceTree = "<group>"; };
+		A0A92336F4EBF76EB021CDB9E063341D /* XSpotLight-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XSpotLight-dummy.m"; sourceTree = "<group>"; };
 		A17294DBE30CAC5E420A57E17D1F1EEB /* Pods-XSpotLight_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XSpotLight_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A428A71128987BA0B0C00F7B6421EC1B /* XSpotLight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XSpotLight.xcconfig; sourceTree = "<group>"; };
 		A91BF05644880D7AC70BA76F7A19CAE6 /* Pods-XSpotLight_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XSpotLight_Example.modulemap"; sourceTree = "<group>"; };
 		AB2CF55B62C4F2CFDB3CE13B4DE7DC28 /* Pods-XSpotLight_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XSpotLight_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AD42744FF1F3878A7398489F4250E215 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = XSpotLight/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		B53795B78EF60CC8D873B698EBEB3BDB /* XSpotView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XSpotView.h; path = XSpotLight/Classes/XSpotView.h; sourceTree = "<group>"; };
 		BC5187EA8A359C447B9F2C92BFB4873F /* Pods-XSpotLight_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XSpotLight_Example-frameworks.sh"; sourceTree = "<group>"; };
-		C2BD827098D0E6C1EE618769630E9F3A /* XSpotLight-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XSpotLight-dummy.m"; sourceTree = "<group>"; };
 		D0E9BB13C976C8963F674D9116CB0F2B /* Pods-XSpotLight_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XSpotLight_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D35F760BF5140441687075C246092418 /* XSpotLight-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XSpotLight-umbrella.h"; sourceTree = "<group>"; };
+		D1F0A1CCAA9A1D9DC95C7255A9286AC3 /* XManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XManager.h; path = XSpotLight/Classes/XManager.h; sourceTree = "<group>"; };
 		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E7AFB4538F1F13FB0012A20C7362E42C /* XSpotLight.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = XSpotLight.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F79163F46B56842F96DED887C0F6C782 /* Pods-XSpotLight_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XSpotLight_Example-Info.plist"; sourceTree = "<group>"; };
 		FCCACB72469ADAC49B5ECB86F6F0F001 /* Pods-XSpotLight_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XSpotLight_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		FD34C2E04895B6EF9817188710571367 /* XSpotLight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XSpotLight.framework; path = XSpotLight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +135,16 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		26808813453CA7E53CAAEC891E91A6A3 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9A057B0B521376E1DC8A76DF6D7FD1E3 /* LICENSE */,
+				630D053CD17A73FFB4251E8F8D949099 /* README.md */,
+				E7AFB4538F1F13FB0012A20C7362E42C /* XSpotLight.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		44D5347904CF754D6785B84253F2574A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,58 +153,23 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		48796CD45B2775191CB4841A4F6D254D /* Development Pods */ = {
+		678451A28F23C6190FC3184F84EBB5E4 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8822BB5A218059999941CE99196955CC /* XSpotLight */,
+				C5CA0FBEC23FB633DCD0E6C4F0AB954E /* XSpotLight */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		4D2A16BCCC5697100B878A16F835BD78 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				685E463603F6997628DCF815AE73C01C /* XSpotLight.modulemap */,
-				7E665B093298C9A986EE32E15837AF7C /* XSpotLight.xcconfig */,
-				C2BD827098D0E6C1EE618769630E9F3A /* XSpotLight-dummy.m */,
-				1F012AA34EB6B93681FE435BE6FB7964 /* XSpotLight-Info.plist */,
-				19FD38B8E78E078DDDF0282A3296AC7A /* XSpotLight-prefix.pch */,
-				D35F760BF5140441687075C246092418 /* XSpotLight-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/XSpotLight";
-			sourceTree = "<group>";
-		};
-		7C2CCFFFD0417467530226F734ED14E9 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				3ED3421954799E8EA6AACC61EAA7F191 /* LICENSE */,
-				46E92D4228683E35905FFDE24F46F4A8 /* README.md */,
-				4D47DABF0EBD094728E32C00CE94E9A1 /* XSpotLight.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				48796CD45B2775191CB4841A4F6D254D /* Development Pods */,
+				678451A28F23C6190FC3184F84EBB5E4 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				E7C0AE7ADD52FE40103F878C3BDA94A4 /* Products */,
 				1CDF1793E35C55832D1D8CA07618B52B /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8822BB5A218059999941CE99196955CC /* XSpotLight */ = {
-			isa = PBXGroup;
-			children = (
-				AD42744FF1F3878A7398489F4250E215 /* ReplaceMe.m */,
-				7C2CCFFFD0417467530226F734ED14E9 /* Pod */,
-				4D2A16BCCC5697100B878A16F835BD78 /* Support Files */,
-			);
-			name = XSpotLight;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		A2886182BE33FAA45E5F0EB5026EDE9F /* Pods-XSpotLight_Tests */ = {
@@ -211,6 +196,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C5CA0FBEC23FB633DCD0E6C4F0AB954E /* XSpotLight */ = {
+			isa = PBXGroup;
+			children = (
+				D1F0A1CCAA9A1D9DC95C7255A9286AC3 /* XManager.h */,
+				8FC820E20DD20F3857F625B59CD16C09 /* XManager.m */,
+				1F49BC8C096C9FEDF97BE7655D6E8DA3 /* XSpotLight.h */,
+				6DEBE92B96ACD035562A1169D16801D7 /* XSpotLight.m */,
+				B53795B78EF60CC8D873B698EBEB3BDB /* XSpotView.h */,
+				36E92E83C3D554D756ECCBBCF5FADAB4 /* XSpotView.m */,
+				26808813453CA7E53CAAEC891E91A6A3 /* Pod */,
+				C6BB2C05AF5987EFBD2A2991C1F9A68D /* Support Files */,
+			);
+			name = XSpotLight;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C6BB2C05AF5987EFBD2A2991C1F9A68D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				55C92AE5ACCEEA672B85D921C8F6294A /* XSpotLight.modulemap */,
+				A428A71128987BA0B0C00F7B6421EC1B /* XSpotLight.xcconfig */,
+				A0A92336F4EBF76EB021CDB9E063341D /* XSpotLight-dummy.m */,
+				95E6B6B4B7BCBEC3F242803D8B003808 /* XSpotLight-Info.plist */,
+				0955DAB524DC9A9BE1610DD208143037 /* XSpotLight-prefix.pch */,
+				9D033FF6C2D2377AD8C4F0A66874694C /* XSpotLight-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XSpotLight";
+			sourceTree = "<group>";
+		};
 		E7C0AE7ADD52FE40103F878C3BDA94A4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,14 +239,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		01CDD5C0C744D5D7E6D504CA8B3681E6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				73A2A02023891CCC84BEF0C8F1534345 /* XSpotLight-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2F371BC002D67C106F5B127EC16EE55C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,6 +252,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				20D5A70F898F5ECECE4FD6D759E03C4B /* Pods-XSpotLight_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD7557A49B2AB9B8A3794C64DF12A91 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DC6EA1656ECD028F869C3E2F2012D52 /* XManager.h in Headers */,
+				CF1D54D3F1052B2257E3F61E1D21F9CC /* XSpotLight-umbrella.h in Headers */,
+				9A73503410A907ABE2C2F190ED474CF5 /* XSpotLight.h in Headers */,
+				25DDCD15F7D2EAC6A1D60F3C98AA2565 /* XSpotView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +311,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18A18C25D4C7A355C9345D3530EA42E0 /* Build configuration list for PBXNativeTarget "XSpotLight" */;
 			buildPhases = (
-				01CDD5C0C744D5D7E6D504CA8B3681E6 /* Headers */,
-				4CA3DB643EB4647FBE1BBBF10441891C /* Sources */,
+				EAD7557A49B2AB9B8A3794C64DF12A91 /* Headers */,
+				4CB49DBF61B20CEEF53118C7B2B13215 /* Sources */,
 				FF66DBC3A88EB460BCE2C09B8C879F7D /* Frameworks */,
 				D39A5C07C4CF0C01BD17B6C040F84622 /* Resources */,
 			);
@@ -360,12 +378,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4CA3DB643EB4647FBE1BBBF10441891C /* Sources */ = {
+		4CB49DBF61B20CEEF53118C7B2B13215 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D1675788D9495DF55BFEEBEADAC5A28 /* ReplaceMe.m in Sources */,
-				0D8B9DA8E6B23ACF92BE549C22BEE9D8 /* XSpotLight-dummy.m in Sources */,
+				E5AF786F27D8BC3A46D6F575AB53505B /* XManager.m in Sources */,
+				ED06E13A7B278C7E4E9268097F6B45AA /* XSpotLight-dummy.m in Sources */,
+				9E238119C649BFF78B9A74A3AB4CC9A2 /* XSpotLight.m in Sources */,
+				1E82200F260DA55ED0072AB28095260C /* XSpotView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +425,7 @@
 /* Begin XCBuildConfiguration section */
 		27B1DC4325D8B10DEE3A92EA2A764CD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E665B093298C9A986EE32E15837AF7C /* XSpotLight.xcconfig */;
+			baseConfigurationReference = A428A71128987BA0B0C00F7B6421EC1B /* XSpotLight.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -630,7 +650,7 @@
 		};
 		A75A27F22B2A1CB06131006929920488 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E665B093298C9A986EE32E15837AF7C /* XSpotLight.xcconfig */;
+			baseConfigurationReference = A428A71128987BA0B0C00F7B6421EC1B /* XSpotLight.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
