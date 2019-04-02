@@ -4,6 +4,7 @@ platform :ios, '8.0'
 
 target 'XSpotLight_Example' do
   pod 'XSpotLight', :path => '../'
+#  pod 'XSpotLight', '0.2.0'
 
   target 'XSpotLight_Tests' do
     inherit! :search_paths

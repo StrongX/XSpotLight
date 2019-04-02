@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XSpotLight'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of XSpotLight.'
+  s.version          = '0.2.0'
+  s.summary          = '聚光灯效果，可以用来做新手引导、功能介绍。'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
