@@ -58,6 +58,7 @@ typedef enum
 @property (nonatomic,assign) id<XSpotDelegate> hintDelegate;
 
 -(UIView*)modalView; // accessor to the modal view (use spareingly)
+
 -(void)clear;//instant removal of modal view
 
 /*
@@ -67,4 +68,6 @@ typedef enum
  // where is the view onto which the modal will overlay
  */
 -(UIView *)presentModalMessage:(NSString*)message where:(UIView*)presentationPlace;
+
+
 @end

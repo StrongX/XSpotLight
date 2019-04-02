@@ -5,16 +5,20 @@
 
 #define BACKGROUND_ALPHA 0.70
 
+@interface XSpotView()
+
+// array positions of spotlights
+@property (nonatomic, strong) NSMutableArray* positionArray;
+// array radius of spotlights
+@property (nonatomic, strong) NSMutableArray* radiusArray;
+@end
+
 @implementation XSpotView
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // initialize arrays
-        _positionArray = [[NSMutableArray alloc] init];
-        _radiusArray = [[NSMutableArray alloc] init];
-        
         // set background color
         [self setBackgroundColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:BACKGROUND_ALPHA]];
     }
@@ -25,16 +29,14 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        _positionArray = [[NSMutableArray alloc] init];
-        _radiusArray = [[NSMutableArray alloc] init];
         // add spotlight position and radius
         for (NSValue* theRectObj in rectArray)
         {
             CGRect theRect = [theRectObj CGRectValue];
             CGPoint pos = CGPointMake(theRect.origin.x, theRect.origin.y);
             CGFloat radius = theRect.size.width;
-            [_positionArray addObject:[NSValue valueWithCGPoint:pos]];
-            [_radiusArray addObject:[NSNumber numberWithFloat:radius]];
+            [self.positionArray addObject:[NSValue valueWithCGPoint:pos]];
+            [self.radiusArray addObject:[NSNumber numberWithFloat:radius]];
         }
         [self setBackgroundColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:BACKGROUND_ALPHA]];
     }
@@ -45,24 +47,28 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
-        _positionArray = [[NSMutableArray alloc] init];
-        _radiusArray = [[NSMutableArray alloc] init];
+       
         // add spotlight position and radius
         for (UIView* theView in viewArray)
         {
             CGPoint pos = CGPointMake(theView.frame.origin.x + (theView.frame.size.width/2)
                                     , theView.frame.origin.y + (theView.frame.size.height/2)  );
             CGFloat radius = theView.frame.size.width;
-            [_positionArray addObject:[NSValue valueWithCGPoint:pos]];
-            [_radiusArray addObject:[NSNumber numberWithFloat:radius]];
+            [self.positionArray addObject:[NSValue valueWithCGPoint:pos]];
+            [self.radiusArray addObject:[NSNumber numberWithFloat:radius]];
         }
         
         [self setBackgroundColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:BACKGROUND_ALPHA]];
     }
     return self;
 }
-
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect
+{
+    // Drawing code
+    [self _background:rect];
+}
 -(void)_background:(CGRect)rect
 {
     // context for drawing
@@ -93,12 +99,12 @@
     CGFloat colorLocations[2] = {0.25,0.5};
     
     // draw spotlights
-    NSInteger spotlightCount = _positionArray.count;
+    NSInteger spotlightCount = self.positionArray.count;
     for (int i=0; i<spotlightCount; ++i)
     {
         // center and radius of spotlight
-        CGPoint c = [[_positionArray objectAtIndex:i] CGPointValue];
-        CGFloat radius = [[_radiusArray objectAtIndex:i] floatValue];
+        CGPoint c = [[self.positionArray objectAtIndex:i] CGPointValue];
+        CGFloat radius = [[self.radiusArray objectAtIndex:i] floatValue];
         
         //draw the shape
         CGMutablePathRef path = CGPathCreateMutable();
@@ -169,13 +175,20 @@
     CGImageRelease(mask);
     CGImageRelease(masked);
 }
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-    [self _background:rect];
+
+#pragma mark - getter & setter
+-(NSMutableArray *)positionArray{
+    if (!_positionArray) {
+        _positionArray = [@[] mutableCopy];
+    }
+    return _positionArray;
 }
 
+-(NSMutableArray *)radiusArray{
+    if (!_radiusArray) {
+        _radiusArray = [@[] mutableCopy];
+    }
+    return _radiusArray;
+}
 
 @end

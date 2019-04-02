@@ -7,19 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XManager.h"
-@class XSpotLight;
+
 @protocol XSpotLightDelegate <NSObject>
 
 @optional
+
 - (void)XSpotLightClicked:(NSInteger)index;
 
 @end
 
-@interface XSpotLight : UIViewController<XSpotDelegate>
-{
-    XManager *modalState;
-}
+@interface XSpotLight : UIViewController
 
 @property (nonatomic, strong) NSArray *messageArray;
 @property (nonatomic,       ) NSArray *rectArray;

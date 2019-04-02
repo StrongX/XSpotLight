@@ -35,42 +35,31 @@
     if (_modalView==nil)
         _modalView = [[XSpotView alloc] initWithFrame:presentationPlace.frame];
     
-    [_modalView setAutoresizingMask:(UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight)];
-//    [presentationPlace addSubview:_modalView];
-    
-    UIView *v = nil;
-
-    if(v==nil)//no custom subview
-    {
-        //label
-        UIFont *ft = [UIFont fontWithName:@"Helvetica" size:17.0];
-        CGSize sz =[message boundingRectWithSize:CGSizeMake(250, 1000) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:ft} context:nil].size;
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(floorf(presentationPlace.center.x - sz.width/2),
-                                                                   floorf(presentationPlace.center.y - sz.height/2),
-                                                                   floorf(sz.width),
-                                                                   floorf(sz.height +10
-                                                                          ))];
-        [label setTextColor:[UIColor whiteColor]];
-
-       
+   
         
-        [label setAutoresizingMask:(UIViewAutoresizingFlexibleTopMargin
-                                    | UIViewAutoresizingFlexibleRightMargin
-                                    | UIViewAutoresizingFlexibleLeftMargin
-                                    | UIViewAutoresizingFlexibleBottomMargin
-                                    )];
-        [label setBackgroundColor:[UIColor clearColor]];
-        [label setFont:ft];
-        [label setAdjustsFontSizeToFitWidth:true];
-        [label setText:message];
-        [label setNumberOfLines:0];
-        [_modalView addSubview:label];
-     }
-    
+    [self createTagLabelWithMessage:message];
 
     
     return _modalView;
 }
+
+-(void)createTagLabelWithMessage:(NSString *)message{
+    //label
+    CGFloat offSet = 20;
+    UIFont *ft = [UIFont fontWithName:@"Helvetica" size:17.0];
+    CGSize sz =[message boundingRectWithSize:CGSizeMake(CGRectGetWidth(_modalView.frame)-offSet*2, 0) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:ft} context:nil].size;
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0,0, CGRectGetWidth(_modalView.frame)-offSet*2,sz.height +10)];
+    label.center = _modalView.center;
+    [label setTextAlignment:NSTextAlignmentCenter];
+    [label setTextColor:[UIColor whiteColor]];
+    [label setBackgroundColor:[UIColor clearColor]];
+    [label setFont:ft];
+    [label setAdjustsFontSizeToFitWidth:true];
+    [label setText:message];
+    [label setNumberOfLines:0];
+    [_modalView addSubview:label];
+}
+
 #pragma mark ---------------------------------->>
 #pragma mark -------------->>cleanup
 - (void)dealloc {

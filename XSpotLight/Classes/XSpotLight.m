@@ -7,12 +7,14 @@
 //
 
 #import "XSpotLight.h"
+#import "XManager.h"
 
-@interface XSpotLight ()
+@interface XSpotLight ()<XSpotDelegate>
 
 
 @property (nonatomic,  ) int index;
 @property (nonatomic, strong) UIView *showView;
+@property (nonatomic, strong) XManager *modalState;
 
 @end
 @implementation XSpotLight
@@ -26,12 +28,6 @@
     [super viewDidLoad];
     _index = 0;
     [self show];
-}
-
--(void)doNext
-{
-    NSString *message = _messageArray[_index];
-    [modalState presentModalMessage:message where:self.navigationController.view];
 }
 
 #pragma mark ---------------------------------->>
@@ -58,9 +54,7 @@
 
 
 -(void)show{
-    modalState = [[XManager alloc] init];
-    [modalState setHintDelegate:self];
-    _showView = [modalState presentModalMessage:_messageArray[_index] where:self.view];
+    _showView = [self.modalState presentModalMessage:_messageArray[_index] where:self.view];
     [self.view addSubview:_showView];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tap)];
@@ -78,4 +72,15 @@
         [self show];
     }
 }
+
+#pragma mark - getter & setter
+
+-(XManager *)modalState{
+    if (!_modalState) {
+        _modalState = [[XManager alloc] init];
+        [_modalState setHintDelegate:self];
+    }
+    return _modalState;
+}
+
 @end
