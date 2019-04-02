@@ -43,25 +43,6 @@
     return self;
 }
 
-- (id)initWithFrame:(CGRect)frame forViews:(NSArray *)viewArray
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-       
-        // add spotlight position and radius
-        for (UIView* theView in viewArray)
-        {
-            CGPoint pos = CGPointMake(theView.frame.origin.x + (theView.frame.size.width/2)
-                                    , theView.frame.origin.y + (theView.frame.size.height/2)  );
-            CGFloat radius = theView.frame.size.width;
-            [self.positionArray addObject:[NSValue valueWithCGPoint:pos]];
-            [self.radiusArray addObject:[NSNumber numberWithFloat:radius]];
-        }
-        
-        [self setBackgroundColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:BACKGROUND_ALPHA]];
-    }
-    return self;
-}
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect

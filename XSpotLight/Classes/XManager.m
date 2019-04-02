@@ -20,12 +20,6 @@
     if(_modalView!=nil)
         [self clear];
     
-    if ([self.hintDelegate respondsToSelector:@selector(hintStateViewsToHint:)]) {
-        NSArray *viewArray = [self.hintDelegate hintStateViewsToHint:self];
-        if(viewArray!=nil)
-            _modalView = [[XSpotView alloc] initWithFrame:presentationPlace.frame forViews:viewArray];
-    }
-    
     if ([self.hintDelegate respondsToSelector:@selector(hintStateRectsToHint:)]) {
         NSArray* rectArray = [self.hintDelegate hintStateRectsToHint:self];
         if (rectArray != nil)

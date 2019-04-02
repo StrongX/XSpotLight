@@ -35,19 +35,8 @@
 
 -(NSArray*)hintStateRectsToHint:(id)hintState
 {
-    NSArray* rectArray = nil;
     NSValue *value = _rectArray[_index];
-    CGRect rect = value.CGRectValue;
-    rectArray = [[NSArray alloc] initWithObjects:[NSValue valueWithCGRect:rect], nil];
-    return rectArray;
-}
--(void)hintStateWillClose:(id)hintState
-{
-    NSLog(@"i am about to close: %@",hintState);
-}
--(void)hintStateDidClose:(id)hintState
-{
-    NSLog(@"i closed: %@",hintState);
+    return @[value];
 }
 
 
