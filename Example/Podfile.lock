@@ -1,16 +1,16 @@
 PODS:
-  - XSpotLight (0.1.0)
+  - XSpotLight (0.2.0)
 
 DEPENDENCIES:
-  - XSpotLight (from `../`)
+  - XSpotLight (= 0.2.0)
 
-EXTERNAL SOURCES:
-  XSpotLight:
-    :path: "../"
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - XSpotLight
 
 SPEC CHECKSUMS:
-  XSpotLight: 0ef047cd4c739fdfdc95579eb26c2a33645d469d
+  XSpotLight: aaa2d96cceb2467236d5d26e04d34bfc61fafd00
 
-PODFILE CHECKSUM: 229fe2f78ccca34b6183257cedc844f858ff2e62
+PODFILE CHECKSUM: dda798da319009a4bcfa5f11a2129a8f935a6fbd
 
 COCOAPODS: 1.6.0.beta.1
