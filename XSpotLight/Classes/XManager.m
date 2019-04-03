@@ -23,11 +23,11 @@
     if ([self.hintDelegate respondsToSelector:@selector(hintStateRectsToHint:)]) {
         NSArray* rectArray = [self.hintDelegate hintStateRectsToHint:self];
         if (rectArray != nil)
-            _modalView = [[XSpotView alloc] initWithFrame:presentationPlace.frame withRects:rectArray];
+            _modalView = [[XSpotView alloc] initWithFrame:presentationPlace.bounds withRects:rectArray];
     }
     
     if (_modalView==nil)
-        _modalView = [[XSpotView alloc] initWithFrame:presentationPlace.frame];
+        _modalView = [[XSpotView alloc] initWithFrame:presentationPlace.bounds];
     
    
         
